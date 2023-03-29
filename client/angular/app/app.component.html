@@ -1,0 +1,14 @@
+<igx-navbar class="navbar">
+  <igx-navbar-title>
+    <igx-avatar src="/assets/Logo.svg" [roundShape]="true" class="avatar"></igx-avatar>
+    <button igxButton="flat" igxRipple routerLink="/view-dashboard" class="button">
+      Load Dashboard
+    </button>
+    <button igxButton="flat" igxRipple routerLink="/new-dashboard" class="button">
+      New dashboard
+    </button>
+  </igx-navbar-title>
+</igx-navbar>
+<div class="view-container">
+  <router-outlet></router-outlet>
+</div>
